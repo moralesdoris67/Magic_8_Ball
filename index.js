@@ -1,3 +1,6 @@
+let btn = document.querySelector('.ask');
+let furtune = document.querySelector('#furtune');
+
 const choices = [
 " As I see it, yes.",
 " Ask again later.",
@@ -21,6 +24,10 @@ const choices = [
 " You may rely on it.",
 ]
 
-const choice = choices[Math.floor(Math.random() * choices.length)];
 
-console.log(choice)
+$(".ask").click(function() {
+  $(".ball").toggleClass("ball-moving");
+  const choice = choices[Math.floor(Math.random() * choices.length)];
+  furtune.innerText = choice;
+});
+//on click the ball transforms or translates then the opacity appears with the text of js

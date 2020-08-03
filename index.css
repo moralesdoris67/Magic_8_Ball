@@ -33,6 +33,7 @@ p{
   left: 200px;
   top: 50px;
   font-size: 92px;
+  color: #2F2F2F;
 }
 .ask{
   font-family: 'Cinzel Decorative', cursive;
@@ -53,6 +54,58 @@ p{
 .ask:focus{
   outline: none;
 }
+.ball{
+background-image: url("mball.png");
+height: 600px;
+width: 600px;
+background-repeat: no-repeat;
+position: absolute;
+left: 1350px;
+top: 500px;
+text-align: center;
+vertical-align: middle;
+font-size: 32px;
+font-family: 'Mansalva', cursive;
+background-color: #2F2F2F;
+border-radius: 50%;
+}
+
+.ball-moving{
+background-image: url("mball.png");
+height: 600px;
+width: 600px;
+background-repeat: no-repeat;
+position: absolute;
+left: 1350px;
+top: 500px;
+animation: balls 1s 1 alternate;
+text-align: center;
+vertical-align: middle;
+}
+
+.ball p {
+  margin:auto;
+  font-size: 24px;
+  color: white;
+  position: absolute;
+  top: 250px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  color: white;
+}
+@keyframes balls {
+  0% {
+    transform:translate(-2%,-2%);
+
+  }
+  100% {
+    transform: translate(0%,0%);
+  }
+}
+
+
+
 
 @keyframes idle {
   from {
